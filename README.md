@@ -24,9 +24,16 @@ D. Install Tensorflow-GPU
 
 
 alternate install
-CTRL + ALT + F1 # masuk ke tty1
-sudo service lightdm stop # stop GUI
-init 3 # kalo bisa, tapi bisa jadi nggak bisa
-cd /path/to/the/run/file/
-sudo sh cuda_xx.x.xxx_xxx.xx_linux.run
-sudo service lightdm start # kembalikan GUI (opsional) bisa langsung reboot
+1. CTRL + ALT + F1 # masuk ke tty1
+2. sudo service lightdm stop # stop GUI
+3. init 3 # kalo bisa, tapi bisa jadi nggak bisa
+4. cd /path/to/the/run/file/
+5. sudo sh cuda_xx.x.xxx_xxx.xx_linux.run
+6. sudo service lightdm start # kembalikan GUI (opsional) bisa langsung reboot
+7. update patches cuda
+8. export PATH di bashrc
+9. install cuDNN
+10. bikin virtualenv
+11. pip install --upgrade tensorflow-gpu==1.xx
+
+
